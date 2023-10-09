@@ -1,0 +1,137 @@
+/* Подключение шрифтов */
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('../fonts/BeVietnamPro-Regular.eot');
+  src: url('../fonts/BeVietnamPro-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/BeVietnamPro-Regular.otf') format('otf'),
+       url('../fonts/BeVietnamPro-Regular.svg#BeVietnamPro-Regular') format('svg'),
+       url('../fonts/BeVietnamPro-Regular.ttf') format('truetype'),
+       url('../fonts/BeVietnamPro-Regular.woff') format('woff'),
+       url('../fonts/BeVietnamPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('../fonts/BeVietnamPro-ExtraBold.eot');
+  src: url('../fonts/BeVietnamPro-ExtraBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/BeVietnamPro-ExtraBold.otf') format('otf'),
+       url('../fonts/BeVietnamPro-ExtraBold.svg#BeVietnamPro-Regular') format('svg'),
+       url('../fonts/BeVietnamPro-ExtraBold.ttf') format('truetype'),
+       url('../fonts/BeVietnamPro-ExtraBold.woff') format('woff'),
+       url('../fonts/BeVietnamPro-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+}
+
+
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	min-height: 100vh;
+	background: radial-gradient(91.4% 63.4% at 50% 0%, rgb(0, 246, 255) 0%, rgb(0, 204, 255) 100%);
+	font-family: BeVietnamPro;
+}
+
+div {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: column;
+	max-width: 430px;
+	border-radius: 18px;
+	overflow: hidden;
+	background: #ffffff	;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 100px 140px -50px, rgba(0, 0, 0, 0.1) 0px 2px 174px 0px;
+}
+
+img {
+	flex: 1 1 auto;
+	width: 100%;
+	max-height: 324px;
+	object-fit: cover;
+}
+
+h1 {
+	padding: 50px 50px 20px;
+	font-weight: 800;
+	font-size: 31px;
+	line-height: 1.2em;
+	letter-spacing: -1px;
+}
+
+p {
+	padding: 0 50px 30px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.6em;
+	letter-spacing: 0;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px 50px;
+}
+
+li {
+	flex: 0 0 auto;
+	margin-right: 15px;
+	width: 40px;
+	height: 40px;
+	background: rgb(243, 243, 243);
+	border-radius: 21px;
+}
+
+li:first-child:hover {
+	background: rgb(0, 153, 255);
+}
+
+li:nth-child(2):hover {
+	background: rgb(144, 0, 255);
+}
+
+li:nth-child(3):hover {
+	background: rgb(0, 145, 255);
+}
+
+li:last-child:hover {
+	background: rgb(0, 85, 255);
+}
+
+li:hover svg path {
+	fill: #ffffff;
+}
+
+a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+svg {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+svg path {
+	transform: translate(30%, 30%);
+	fill: #666666;
+}
+
+@media(max-width: 430px) {
+	main {
+		padding: 0;
+	}
+
+	div {
+		border-radius: 0;
+	}
+}
+
